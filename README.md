@@ -7,11 +7,8 @@
 <br/>
 
 [![Open to Internships](https://img.shields.io/badge/Open%20to-Internships%20%26%20Collabs-6366f1?style=for-the-badge&logo=handshake&logoColor=white)](mailto:shivamchaurasia2848@gmail.com)&nbsp;
-[![Location](https://img.shields.io/badge/%F0%9F%93%8D%20Based%20in-India-818cf8?style=for-the-badge)](https://github.com/TheProtagonist07)
-
-<br/>
-
-[![Unique Visitors](https://visitor-badge.laobi.icu/badge?page_id=TheProtagonist07.TheProtagonist07&left_color=%230d1117&right_color=%236366f1&left_text=unique%20visitors&font_size=14)](https://github.com/TheProtagonist07)
+[![Location](https://img.shields.io/badge/Based%20in-India%20%F0%9F%87%AE%F0%9F%87%B3-818cf8?style=for-the-badge&logoColor=white)](https://github.com/TheProtagonist07)&nbsp;
+[![Followers](https://img.shields.io/github/followers/TheProtagonist07?style=for-the-badge&logo=github&logoColor=white&label=Followers&color=c084fc)](https://github.com/TheProtagonist07?tab=followers)
 
 </div>
 
@@ -48,23 +45,25 @@ const shivam = {
 
 [![Hardware Skills](https://skillicons.dev/icons?i=arduino,cpp,c,raspberrypi&perline=7)](https://skillicons.dev)
 
-**3D & Creative**
+**3D & Creative · Tools**
 
-[![Creative Skills](https://skillicons.dev/icons?i=blender,figma&perline=7)](https://skillicons.dev)
-
-**Tools & Environment**
-
-[![Tools](https://skillicons.dev/icons?i=git,github,vscode,linux&perline=7)](https://skillicons.dev)
+[![Other Skills](https://skillicons.dev/icons?i=blender,figma,git,github,vscode,linux&perline=7)](https://skillicons.dev)
 
 </div>
 
 <br/>
 
-## 🚀 Featured Project
+## 🚀 Featured Project — FlowBoard
 
 <div align="center">
 
-[![FlowBoard](https://img.shields.io/badge/FlowBoard-Kanban%20Project%20Manager-6366f1?style=for-the-badge&logo=trello&logoColor=white)](https://github.com/TheProtagonist07/flowboard-kanban)&nbsp;
+<a href="https://github.com/TheProtagonist07/flowboard-kanban">
+  <img src="https://raw.githubusercontent.com/TheProtagonist07/flowboard-kanban/main/screenshots/main-board.png" width="100%" alt="FlowBoard Kanban Board" />
+</a>
+
+<br/><br/>
+
+[![View Repo](https://img.shields.io/badge/View%20Repository-flowboard--kanban-6366f1?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TheProtagonist07/flowboard-kanban)&nbsp;
 [![TypeScript](https://img.shields.io/badge/TypeScript-React%2018%20%7C%20Tailwind%20%7C%20Zustand-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/TheProtagonist07/flowboard-kanban)
 
 </div>
@@ -77,19 +76,7 @@ A production-quality Kanban board built from scratch — drag-and-drop columns, 
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TheProtagonist07&theme=tokyonight" width="100%" />
-
-<br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TheProtagonist07&theme=tokyonight" height="180" />&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TheProtagonist07&theme=tokyonight" height="180" />&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TheProtagonist07&theme=tokyonight" height="180" />
-
-</div>
-
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=TheProtagonist07&theme=tokyonight&hide_border=true&background=0d1117&stroke=818cf8&ring=6366f1&fire=c084fc&currStreakLabel=818cf8&sideLabels=94a3b8&sideNums=818cf8&dates=64748b)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=TheProtagonist07&theme=tokyonight&hide_border=true&background=0d1117&stroke=6366f1&ring=818cf8&fire=c084fc&currStreakLabel=818cf8&sideLabels=94a3b8&sideNums=e2e8f0&dates=64748b)](https://git.io/streak-stats)
 
 </div>
 
