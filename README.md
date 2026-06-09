@@ -8,7 +8,7 @@
 
 [![Open to Internships](https://img.shields.io/badge/Open%20to-Internships%20%26%20Collabs-6366f1?style=for-the-badge&logo=handshake&logoColor=white)](mailto:shivamchaurasia2848@gmail.com)&nbsp;
 [![Location](https://img.shields.io/badge/%F0%9F%93%8D%20Based%20in-India-818cf8?style=for-the-badge)](https://github.com/TheProtagonist07)&nbsp;
-[![Profile Views](https://komarev.com/ghpvc/?username=TheProtagonist07&style=for-the-badge&color=818cf8&label=PROFILE+VIEWS)](https://github.com/TheProtagonist07)
+[![Unique Visitors](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheProtagonist07&count_bg=%236366f1&title_bg=%230d1117&icon=github.svg&icon_color=%23818cf8&title=Unique+Visitors&edge_flat=false)](https://github.com/TheProtagonist07)
 
 </div>
 
