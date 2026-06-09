@@ -18,12 +18,12 @@
 
 ```typescript
 const shivam = {
-  degree:       "B.Tech · Electronics & Communication Engineering 🇮🇳",
-  building:     "FlowBoard — a full-featured Kanban board (React · TypeScript)",
-  interests:    ["Web Dev", "Embedded Systems", "Machine Learning", "3D Modelling"],
-  hardware:     ["Arduino", "Raspberry Pi", "Circuit Design", "3D Printing"],
-  funFact:      "I blend software, circuits, and creative tools into one workflow",
-  openTo:       ["Internships", "Open Source Collabs", "Interesting Problems"],
+  degree:    "B.Tech · Electronics & Communication Engineering 🇮🇳",
+  building:  "FlowBoard — Kanban board (React · TypeScript)",
+  interests: ["Web Dev", "Embedded Systems", "ML", "3D Modelling"],
+  hardware:  ["Arduino", "Raspberry Pi", "3D Printing"],
+  funFact:   "Software × Circuits × Creative tools in one workflow",
+  openTo:    ["Internships", "Open Source", "Collabs"],
 };
 ```
 
@@ -61,13 +61,12 @@ const shivam = {
 
 <div align="center">
 
-[![FlowBoard Card](https://github-readme-stats.vercel.app/api/pin/?username=TheProtagonist07&repo=flowboard-kanban&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=818cf8&icon_color=c084fc&text_color=94a3b8&description_lines_count=3)](https://github.com/TheProtagonist07/flowboard-kanban)
+[![FlowBoard](https://img.shields.io/badge/FlowBoard-Kanban%20Project%20Manager-6366f1?style=for-the-badge&logo=trello&logoColor=white)](https://github.com/TheProtagonist07/flowboard-kanban)&nbsp;
+[![TypeScript](https://img.shields.io/badge/TypeScript-React%2018%20%7C%20Tailwind%20%7C%20Zustand-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/TheProtagonist07/flowboard-kanban)
 
 </div>
 
-**FlowBoard** is a production-quality Kanban board I built from scratch — drag-and-drop columns, WIP limits, Pomodoro timer, team delegation, voice-to-text notes (Web Speech API), analytics, calendar view, shareable board links, a `⌘K` command palette, and **8 live themes** including Hacker (matrix green), Dracula, Nord, and more.
-
-> `React 18` · `TypeScript` · `Tailwind CSS` · `Zustand` · `Vite` · `@hello-pangea/dnd`
+A production-quality Kanban board built from scratch — drag-and-drop columns, WIP limits, Pomodoro timer, team delegation, voice-to-text notes, analytics, calendar view, shareable board links, a `⌘K` command palette, and **8 live themes** (Hacker, Dracula, Nord, Midnight and more).
 
 <br/>
 
@@ -75,25 +74,19 @@ const shivam = {
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=TheProtagonist07&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=818cf8&icon_color=c084fc&text_color=94a3b8&count_private=true&include_all_commits=true" />
-&nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheProtagonist07&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=818cf8&text_color=94a3b8&langs_count=6" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TheProtagonist07&theme=tokyonight" width="100%" />
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TheProtagonist07&theme=tokyonight" height="180" />&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TheProtagonist07&theme=tokyonight" height="180" />&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TheProtagonist07&theme=tokyonight" height="180" />
 
 </div>
 
 <div align="center">
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=TheProtagonist07&theme=tokyonight&hide_border=true&background=0d1117&stroke=818cf8&ring=6366f1&fire=c084fc&currStreakLabel=818cf8&sideLabels=94a3b8&sideNums=818cf8&dates=64748b)](https://git.io/streak-stats)
-
-</div>
-
-<br/>
-
-## 🏆 Trophies
-
-<div align="center">
-
-[![Trophies](https://github-profile-trophy.vercel.app/?username=TheProtagonist07&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
