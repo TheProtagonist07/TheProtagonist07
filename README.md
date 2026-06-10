@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=230&section=header&text=Code%20%C2%B7%20Circuits%20%C2%B7%20Create&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=ECE%20Undergrad%20%E2%80%A2%20Builder%20%E2%80%A2%20Maker%20%E2%80%A2%20Open%20to%20Collaborate&descSize=18&descAlignY=60&descColor=c7d2fe" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=230&section=header&text=Code%20%C2%B7%20Circuits%20%C2%B7%20Create&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=Engineer%20%E2%80%A2%20Builder%20%E2%80%A2%20Maker%20%E2%80%A2%20Open%20to%20Collaborate&descSize=18&descAlignY=60&descColor=c7d2fe" />
 
 <div align="center">
 
