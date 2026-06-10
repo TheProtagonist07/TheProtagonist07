@@ -6,7 +6,7 @@
 
 <br/>
 
-[![Open to Internships](https://img.shields.io/badge/Open%20to-Internships%20%26%20Collabs-6366f1?style=for-the-badge&logo=handshake&logoColor=white)](mailto:shivamchaurasia2848@gmail.com)&nbsp;
+[![Open to Roles](https://img.shields.io/badge/Open%20to-Roles%20%26%20Collabs-6366f1?style=for-the-badge&logo=handshake&logoColor=white)](mailto:shivamchaurasia2848@gmail.com)&nbsp;
 [![Location](https://img.shields.io/badge/Based%20in-India%20%F0%9F%87%AE%F0%9F%87%B3-818cf8?style=for-the-badge&logoColor=white)](https://github.com/TheProtagonist07)&nbsp;
 [![Followers](https://img.shields.io/github/followers/TheProtagonist07?style=for-the-badge&logo=github&logoColor=white&label=Followers&color=c084fc)](https://github.com/TheProtagonist07?tab=followers)
 
@@ -18,12 +18,12 @@
 
 ```typescript
 const shivam = {
-  degree:    "B.Tech · Electronics & Communication Engineering 🇮🇳",
+  degree:    "B.Tech · Electronics & Communication Engineering · 2021 🇮🇳",
   building:  "FlowBoard — Kanban board (React · TypeScript)",
   interests: ["Web Dev", "Embedded Systems", "ML", "3D Modelling"],
   hardware:  ["Arduino", "Raspberry Pi", "3D Printing"],
   funFact:   "Software × Circuits × Creative tools in one workflow",
-  openTo:    ["Internships", "Open Source", "Collabs"],
+  openTo:    ["Full-time Roles", "Open Source", "Collabs"],
 };
 ```
 
