@@ -1,0 +1,34 @@
+name: Update open source contributions
+
+on:
+  schedule:
+    - cron: "30 3 * * *"   # 09:00 IST daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-contributions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add new contributions to the README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update_contributions.py
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "Shivam Chaurasia"
+          git config user.email "63047129+TheProtagonist07@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update open source contributions"
+          git push

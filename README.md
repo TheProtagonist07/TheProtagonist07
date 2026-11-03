@@ -107,6 +107,7 @@ A Kanban board with drag-and-drop columns, WIP limits, a Pomodoro timer and 8 th
 - **Quant Research Platform**: the pre-registered 500-stock experiments, then paper trading and time-series-safe machine learning.
 
 ## 🤝 Open source
+<!-- contributions:start -->
 | Project | Contribution | Status |
 |---|---|---|
 | [bloks](https://github.com/hamedgitty/bloks) (local-first AI agent workspace) | Find a real shell for engine installs on Linux machines without zsh, [#307](https://github.com/hamedgitty/bloks/pull/307) | Shipped in [v2.11.0](https://github.com/hamedgitty/bloks/releases/tag/v2.11.0) |
@@ -115,6 +116,7 @@ A Kanban board with drag-and-drop columns, WIP limits, a Pomodoro timer and 8 th
 | [raylib](https://github.com/raysan5/raylib) | Fix a heap-buffer-overflow when saving KTX images, [#6290](https://github.com/raysan5/raylib/pull/6290) | Merged |
 | [raylib](https://github.com/raysan5/raylib) | Skip the GLFW workarea clamp when the reported size is invalid, [#6296](https://github.com/raysan5/raylib/pull/6296) | Merged |
 | [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) | Correct Hindi and Bhojpuri spelling, [#942](https://github.com/DenverCoder1/github-readme-streak-stats/pull/942) | Merged |
+<!-- contributions:end -->
 
 ## 🎮 Hobby
 I make small games in my spare time.
