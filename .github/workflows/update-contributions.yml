@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: "30 3 * * *"   # 09:00 IST daily
   workflow_dispatch:
-  push:
-    branches: [feat/auto-contributions]   # trial run on this branch; remove before merge
 
 permissions:
   contents: write
