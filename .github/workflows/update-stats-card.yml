@@ -1,0 +1,43 @@
+name: Update stats card
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 05:30 IST daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats-card
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerate assets/stats-compact-indigo.svg
+        env:
+          # STATS_TOKEN is optional. Without it the repository GITHUB_TOKEN is used,
+          # which reads the calendar by UTC days (the same as the public profile).
+          # A personal access token makes the calendar follow the account's own
+          # time zone setting instead.
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update_stats_card.py
+      - name: Commit and push if the SVG changed
+        run: |
+          if git diff --quiet -- assets/stats-compact-indigo.svg; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "Shivam Chaurasia"
+          git config user.email "63047129+TheProtagonist07@users.noreply.github.com"
+          git add assets/stats-compact-indigo.svg
+          git commit -m "Update stats card"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1
