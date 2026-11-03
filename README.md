@@ -110,6 +110,11 @@ A Kanban board with drag-and-drop columns, WIP limits, a Pomodoro timer and 8 th
 <!-- contributions:start -->
 | Project | Contribution | Status |
 |---|---|---|
+| [ha-bambulab](https://github.com/greghesp/ha-bambulab) | Detect secured MQTT state from print.flag3 when print.fun is empty, [#2182](https://github.com/greghesp/ha-bambulab/pull/2182) | Merged |
+| [ha-bambulab](https://github.com/greghesp/ha-bambulab) | Fix Italian translation of right nozzle entities, [#2183](https://github.com/greghesp/ha-bambulab/pull/2183) | Merged |
+| [OpenIGI](https://github.com/OpenIGI/OpenIGI) | The map key that closes the computer no longer opens it again, [#12](https://github.com/OpenIGI/OpenIGI/pull/12) | Merged |
+| [libgphoto2](https://github.com/gphoto/libgphoto2) | Reject an allocation table that does not fit the buffers, [#1338](https://github.com/gphoto/libgphoto2/pull/1338) | Merged |
+| [libgphoto2](https://github.com/gphoto/libgphoto2) | Finish close cleanup when release_interface fails, [#1339](https://github.com/gphoto/libgphoto2/pull/1339) | Merged |
 | [bloks](https://github.com/hamedgitty/bloks) (local-first AI agent workspace) | Find a real shell for engine installs on Linux machines without zsh, [#307](https://github.com/hamedgitty/bloks/pull/307) | Shipped in [v2.11.0](https://github.com/hamedgitty/bloks/releases/tag/v2.11.0) |
 | [bloks](https://github.com/hamedgitty/bloks) | Give a flaky batched sweep test a different file size every turn, [#308](https://github.com/hamedgitty/bloks/pull/308) | Shipped in [v2.11.0](https://github.com/hamedgitty/bloks/releases/tag/v2.11.0) |
 | [bloks](https://github.com/hamedgitty/bloks) | Issue: detect Ollama at `OLLAMA_HOST`, [#309](https://github.com/hamedgitty/bloks/issues/309) | Fixed in [v2.11.0](https://github.com/hamedgitty/bloks/releases/tag/v2.11.0) |
