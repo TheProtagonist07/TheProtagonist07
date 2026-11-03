@@ -8,6 +8,10 @@ and rewrites only the three numbers and the two polylines. The rest of the SVG
 Usage: update_stats_card.py [--dry-run]
 Env:   STATS_TOKEN or GITHUB_TOKEN (required), USER_LOGIN (optional)
 
+Days come from the API as calendar dates. With GITHUB_TOKEN they are UTC days
+(like the public profile heatmap); with a personal access token of the account
+they follow that account's time zone setting.
+
 If the API call fails, or the total drops to under half of what the card shows
 (which is what a token that cannot see private contributions would produce),
 the card is left unchanged and a warning is printed.
