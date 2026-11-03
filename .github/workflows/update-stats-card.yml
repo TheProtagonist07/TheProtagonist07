@@ -27,6 +27,17 @@ jobs:
           STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 .github/scripts/update_stats_card.py --dry-run
+      - name: Debug days
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import sys; sys.path.insert(0,'.github/scripts')
+          import update_stats_card as u
+          t,w=u.fetch()
+          d=[(x['date'],x['contributionCount']) for k in w for x in k['contributionDays']]
+          print('DAYS',[x for x in d if x[0]>='2026-10-08'])
+          PY
       - name: Commit and push if the SVG changed
         run: |
           if git diff --quiet -- assets/stats-compact-indigo.svg; then
