@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: "0 0 * * *"   # 05:30 IST daily
   workflow_dispatch:
+  push:
+    branches: [feat/streak-refresh]
 
 permissions:
   contents: write
@@ -24,7 +26,7 @@ jobs:
           # Without it the repository GITHUB_TOKEN is used.
           STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 .github/scripts/update_stats_card.py
+        run: python3 .github/scripts/update_stats_card.py --dry-run
       - name: Commit and push if the SVG changed
         run: |
           if git diff --quiet -- assets/stats-compact-indigo.svg; then
