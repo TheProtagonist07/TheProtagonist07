@@ -1,0 +1,10 @@
+{
+  "allow": [
+    "hamedgitty/bloks#307",
+    "hamedgitty/bloks#308",
+    "hamedgitty/bloks#309"
+  ],
+  "ignore": [
+    "firstcontributions/first-contributions#68821"
+  ]
+}
