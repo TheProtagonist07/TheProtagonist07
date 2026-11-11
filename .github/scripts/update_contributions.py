@@ -9,7 +9,7 @@ Only the rows between the START and END markers are touched.
 
 Usage: update_contributions.py [--dry-run]   (env: GITHUB_TOKEN, optional USER_LOGIN)
 """
-import json, os, re, sys, urllib.parse, urllib.request
+import json, os, re, sys, urllib.error, urllib.parse, urllib.request
 
 START, END = "<!-- contributions:start -->", "<!-- contributions:end -->"
 ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
@@ -56,6 +56,64 @@ def fetch(config):
     return found
 
 
+MAX_COMPARES_PER_ROW = 20
+_releases = {}
+
+
+def releases(repo):
+    """Published releases of a repo, oldest first (cached for the run)."""
+    if repo not in _releases:
+        found = []
+        for page in (1, 2, 3):
+            try:
+                batch = api(f"/repos/{repo}/releases", per_page=100, page=page)
+            except urllib.error.HTTPError:
+                break
+            found += [r for r in batch if not r["draft"] and not r["prerelease"] and r.get("published_at")]
+            if len(batch) < 100:
+                break
+        _releases[repo] = sorted(found, key=lambda r: r["published_at"])
+    return _releases[repo]
+
+
+def contains(repo, sha, tag):
+    """True if the commit `sha` is part of `tag`."""
+    try:
+        res = api(f"/repos/{repo}/compare/{sha}...{urllib.parse.quote(tag, safe='')}", per_page=1)
+    except urllib.error.HTTPError:
+        return False
+    return res["status"] in ("ahead", "identical")
+
+
+def shipped_in(repo, number):
+    """Earliest published release that contains the merged pull request, or None."""
+    try:
+        pr = api(f"/repos/{repo}/pulls/{number}")
+    except urllib.error.HTTPError:
+        return None
+    if not pr.get("merged") or not pr.get("merge_commit_sha"):
+        return None
+    after = [r for r in releases(repo) if r["published_at"] >= pr["merged_at"]]
+    if not after or not contains(repo, pr["merge_commit_sha"], after[-1]["tag_name"]):
+        return None  # not in the newest release, so not in any release yet
+    for r in after[:MAX_COMPARES_PER_ROW]:
+        if contains(repo, pr["merge_commit_sha"], r["tag_name"]):
+            return r
+    return after[-1]
+
+
+def refresh_status(line, log):
+    m = re.match(r"^(\|.*github\.com/([\w.-]+/[\w.-]+)/pull/(\d+)\).*\| )Merged( \|)$", line)
+    if not m:
+        return line
+    repo, number = m.group(2), int(m.group(3))
+    rel = shipped_in(repo, number)
+    if not rel:
+        return line
+    log.append(f"{repo}#{number}: Merged -> Shipped in {rel['tag_name']} (published {rel['published_at']})")
+    return f"{m.group(1)}Shipped in [{rel['tag_name']}]({rel['html_url']}){m.group(4)}"
+
+
 def main():
     dry = "--dry-run" in sys.argv
     config = json.load(open(CONFIG))
@@ -90,6 +148,10 @@ def main():
             body[idx[-1] + 1:idx[-1] + 1] = new.pop(repo)
     top = [r for repo in sorted(new, key=lambda k: newest[k], reverse=True) for r in new[repo]]
     body = top + body
+    log = []
+    body = [refresh_status(l, log) for l in body]
+    for entry in log:
+        print(entry)
 
     result = "\n".join(lines[:2] + body)
     out = head + START + "\n" + result + "\n" + END + tail
