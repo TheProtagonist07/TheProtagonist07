@@ -110,9 +110,9 @@ A Kanban board with drag-and-drop columns, WIP limits, a Pomodoro timer and 8 th
 <!-- contributions:start -->
 | Project | Contribution | Status |
 |---|---|---|
-| [ha-bambulab](https://github.com/greghesp/ha-bambulab) | Detect secured MQTT state from print.flag3 when print.fun is empty, [#2182](https://github.com/greghesp/ha-bambulab/pull/2182) | Merged |
-| [ha-bambulab](https://github.com/greghesp/ha-bambulab) | Fix Italian translation of right nozzle entities, [#2183](https://github.com/greghesp/ha-bambulab/pull/2183) | Merged |
-| [OpenIGI](https://github.com/OpenIGI/OpenIGI) | The map key that closes the computer no longer opens it again, [#12](https://github.com/OpenIGI/OpenIGI/pull/12) | Merged |
+| [ha-bambulab](https://github.com/greghesp/ha-bambulab) | Detect secured MQTT state from print.flag3 when print.fun is empty, [#2182](https://github.com/greghesp/ha-bambulab/pull/2182) | Shipped in [v2.3.0](https://github.com/greghesp/ha-bambulab/releases/tag/v2.3.0) |
+| [ha-bambulab](https://github.com/greghesp/ha-bambulab) | Fix Italian translation of right nozzle entities, [#2183](https://github.com/greghesp/ha-bambulab/pull/2183) | Shipped in [v2.3.0](https://github.com/greghesp/ha-bambulab/releases/tag/v2.3.0) |
+| [OpenIGI](https://github.com/OpenIGI/OpenIGI) | The map key that closes the computer no longer opens it again, [#12](https://github.com/OpenIGI/OpenIGI/pull/12) | Shipped in [v0.5.4](https://github.com/OpenIGI/OpenIGI/releases/tag/v0.5.4) |
 | [libgphoto2](https://github.com/gphoto/libgphoto2) | Reject an allocation table that does not fit the buffers, [#1338](https://github.com/gphoto/libgphoto2/pull/1338) | Merged |
 | [libgphoto2](https://github.com/gphoto/libgphoto2) | Finish close cleanup when release_interface fails, [#1339](https://github.com/gphoto/libgphoto2/pull/1339) | Merged |
 | [bloks](https://github.com/hamedgitty/bloks) (local-first AI agent workspace) | Find a real shell for engine installs on Linux machines without zsh, [#307](https://github.com/hamedgitty/bloks/pull/307) | Shipped in [v2.11.0](https://github.com/hamedgitty/bloks/releases/tag/v2.11.0) |
@@ -120,7 +120,7 @@ A Kanban board with drag-and-drop columns, WIP limits, a Pomodoro timer and 8 th
 | [bloks](https://github.com/hamedgitty/bloks) | Issue: detect Ollama at `OLLAMA_HOST`, [#309](https://github.com/hamedgitty/bloks/issues/309) | Fixed in [v2.11.0](https://github.com/hamedgitty/bloks/releases/tag/v2.11.0) |
 | [raylib](https://github.com/raysan5/raylib) | Fix a heap-buffer-overflow when saving KTX images, [#6290](https://github.com/raysan5/raylib/pull/6290) | Merged |
 | [raylib](https://github.com/raysan5/raylib) | Skip the GLFW workarea clamp when the reported size is invalid, [#6296](https://github.com/raysan5/raylib/pull/6296) | Merged |
-| [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) | Correct Hindi and Bhojpuri spelling, [#942](https://github.com/DenverCoder1/github-readme-streak-stats/pull/942) | Merged |
+| [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) | Correct Hindi and Bhojpuri spelling, [#942](https://github.com/DenverCoder1/github-readme-streak-stats/pull/942) | Shipped in [v1.8.1](https://github.com/DenverCoder1/github-readme-streak-stats/releases/tag/v1.8.1) |
 <!-- contributions:end -->
 
 ## 🎮 Hobby
